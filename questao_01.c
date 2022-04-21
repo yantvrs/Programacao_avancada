@@ -7,7 +7,9 @@ int main(){
 	int *p, *q;
 	p = &i;
 	q = &j;
+	
 	//Determine o valor das seguintes expressões:
+	printf("Respostas:\n");
 	printf("%d = Verdade\n",p == &i);
 	printf("%d\n", *p - *q);
 	printf("%d\n", **&p);
