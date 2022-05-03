@@ -41,5 +41,6 @@ int main(){
     scanf("%f", &oa[i]);
   }
   ordem(oa, tam);
+  free(oa);
   return 0;
 }
