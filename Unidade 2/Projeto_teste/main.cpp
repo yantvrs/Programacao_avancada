@@ -1,6 +1,7 @@
 #include <iostream>
 #include "funcao1.hpp"
 #include "funcao2.hpp"
+#include "vetor2d.h"
 
 //Notas de aula:
 
@@ -39,23 +40,12 @@
 
 */
 
-class Vetor2d {
-private:
-    float x, y ;
-public:
-    void setX(float x_){ //O underline serve para diferenciar a variável da função
-        x = x_;
-    }
-    float getX(){
-        return x;
-    }
-};
 
 int main()
 {
     Vetor2d v;
     v.setX(3); //setX vai guardar o valor 3
-    std::cout << v.getX(); //O acesso aos menbros é feito com o operador "."(ponto).
+    std::cout << v.getX() << std::endl; //O acesso aos menbros é feito com o operador "."(ponto).
 
 
     std::cout << "Alo, C++!\n";
