@@ -2,8 +2,6 @@
 #include "funcao1.hpp"
 #include "funcao2.hpp"
 
-using namespace std;
-
 //Notas de aula:
 
 /*
@@ -33,12 +31,33 @@ using namespace std;
   Comportamento: funcionalidades implementadas.
   Estado: valores de variáveis.
 
->>O que é um objeto? É uma instância de uma classe.
+>>Pelo encapsulamento, o desenvolvedor pode organizar os elementos de uma
+ abstração de modo que os utilizadores de uma determinada classe saibam
+ apenas o necessário sobreo comportamento dos objetos que a ela pertencem.
+
+>>A modificação do estado dos objetos se daria apenas pelos métodos da classe.
 
 */
 
+class Vetor2d {
+private:
+    float x, y ;
+public:
+    void setX(float x_){ //O underline serve para diferenciar a variável da função
+        x = x_;
+    }
+    float getX(){
+        return x;
+    }
+};
+
 int main()
 {
+    Vetor2d v;
+    v.setX(3); //setX vai guardar o valor 3
+    std::cout << v.getX(); //O acesso aos menbros é feito com o operador "."(ponto).
+
+
     std::cout << "Alo, C++!\n";
     funcao1();
     funcao2();
