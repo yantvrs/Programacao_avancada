@@ -1,6 +1,6 @@
 <h1 align="center">Programação avançada</h1>
 </br>
-<p>Neste reposítório estão as atividades realizadas na unidade 1 da disciplina de Programação Avançada(dca1202).</p>
+<p>Neste repositório estão as atividades realizadas na unidade 1 da disciplina de Programação Avançada(dca1202).</p>
 </hr>
 <div align="center">
 
